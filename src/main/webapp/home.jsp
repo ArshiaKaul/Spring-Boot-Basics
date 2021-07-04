@@ -16,13 +16,7 @@
 	</form>
 	
 	Get Alien by Id
-	<form action="getAlienById">
-		<input type="text" name="aid"><br>
-		<input type="submit"><br>
-	</form>
-	
-	Get Alien by Tech
-	<form action="getAlienByTech">
+	<form action="getAlien">
 		<input type="text" name="aid"><br>
 		<input type="submit"><br>
 	</form>
