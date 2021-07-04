@@ -27,11 +27,25 @@ public class AlienController {
 		return "home.jsp";
 	}
 	
-	@RequestMapping("/getAlien")
-	public ModelAndView getAlien(@RequestParam int aid) {
+	@RequestMapping("/getAlienById")
+	public ModelAndView getAlienbyId(@RequestParam int aid) {
 		
 		ModelAndView mv = new ModelAndView("showAlien.jsp");
 		Alien alien = repo.findById(aid).orElse(new Alien());
+		mv.addObject(alien);
+		return mv;
+	}
+	
+	@RequestMapping("/getAlienByTech")
+	public ModelAndView getAlienByTech(@RequestParam int aid) {
+		
+		ModelAndView mv = new ModelAndView("showAlien.jsp");
+		Alien alien = repo.findById(aid).orElse(new Alien());
+// 		Other ways to fetch aliens (only in console)		
+		System.out.println(repo.findByTech("RedBull"));	//get aliens having tech=RedBull
+		System.out.println(repo.findByAidGreaterThan(102)); //get aliens having ids>102
+		System.out.println(repo.findByTechSorted("RedBull")); //get aliens having tech=RedBull in sorted order of aname
+		
 		mv.addObject(alien);
 		return mv;
 	}

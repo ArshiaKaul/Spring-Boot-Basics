@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+	Add Alien
 	<form action="addAlien">
 		<input type="text" name="aid"><br>
 		<input type="text" name="aname"><br>
@@ -14,16 +15,25 @@
 		<input type="submit"><br>
 	</form>
 	
-	<form action="getAlien">
+	Get Alien by Id
+	<form action="getAlienById">
 		<input type="text" name="aid"><br>
 		<input type="submit"><br>
 	</form>
 	
+	Get Alien by Tech
+	<form action="getAlienByTech">
+		<input type="text" name="aid"><br>
+		<input type="submit"><br>
+	</form>
+	
+	Delete Alien
 	<form action="deleteAlien">
 		<input type="text" name="aid"><br>
 		<input type="submit"><br>
 	</form>
 	
+	Update Alien
 	<form action="updateAlien">
 		<input type="text" name="aid"><br>
 		<input type="text" name="aname"><br>
