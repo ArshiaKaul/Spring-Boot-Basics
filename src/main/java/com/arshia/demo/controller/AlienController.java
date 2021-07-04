@@ -30,8 +30,10 @@ public class AlienController {
 		return "home.jsp";
 	}
 	
-	//returns a list of all aliens in JSON format
-	@RequestMapping("/aliens")
+	//add support for xml in pom file
+	//getAliens returns only in xml format
+	//to return as json also, remove the 'produces' parameter or write produces={"application/xml", "application/json"}
+	@RequestMapping(path="/aliens", produces= {"application/xml"})
 	@ResponseBody
 	public List<Alien> getAliens() {
 		
