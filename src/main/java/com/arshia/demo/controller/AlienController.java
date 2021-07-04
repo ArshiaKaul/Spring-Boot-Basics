@@ -39,7 +39,7 @@ public class AlienController {
 	}
 	
 	//returns an alien in JSON format based on aid
-	@RequestMapping("/aliens/{aid}")
+	@RequestMapping("/alien/{aid}")
 	@ResponseBody
 	public Optional<Alien> getAlien(@PathVariable("aid") int aid) {
 		
