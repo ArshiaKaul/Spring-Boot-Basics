@@ -40,5 +40,15 @@ public class Alien {
 	public String toString() {
 		return "Alien [aid=" + aid + ", aname=" + aname + ", tech=" + tech + "]";
 	}
+	
+	public Alien (int aid, String aname, String tech){
+		this.aid = aid;
+		this.aname = aname;
+		this.tech = tech;
+	}
+
+	public Alien() {
+		// TODO Auto-generated constructor stub
+	}
 		
 }
