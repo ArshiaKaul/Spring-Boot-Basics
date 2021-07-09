@@ -1,13 +1,13 @@
-package com.arshia.demo;
+package com.example.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BootjpaApplication {
+public class SpringDataRestApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BootjpaApplication.class, args);
+		SpringApplication.run(SpringDataRestApplication.class, args);
 	}
 
 }
